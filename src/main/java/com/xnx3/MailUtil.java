@@ -86,12 +86,12 @@ public class MailUtil {
 	 * 设定发送邮件的服务器的端口
 	 * @param mailSmtpPort 端口号，如正常使用80端口，阿里云使用 25端口 
 	 */
-	private void setSmtpPort(String mailSmtpPort){
+	public void setSmtpPort(String mailSmtpPort){
 		properties.put("mail.smtp.port", mailSmtpPort);
 	}
 	
 	/**
-	 * 增加 ssl
+	 * 增加 ssl 支持
 	 */
 	public void addSSL(){
 		MailSSLSocketFactory sf = null;
@@ -106,6 +106,10 @@ public class MailUtil {
 		properties.put("mail.smtp.ssl.socketFactory", sf);
 	}
 	
+	/**
+	 * 设定发信相关参数
+	 * @param properties {@link Properties}
+	 */
 	public void setProperties(Properties properties) {
 		this.properties = properties;
 	}

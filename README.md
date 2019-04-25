@@ -1,7 +1,7 @@
 # Java 一句代码发送邮件
 适用于JDK8
 
-# 代码使用示例
+# 代码中使用示例
 1. maven pom.xml 中加入
 ````
 <dependency>
@@ -31,3 +31,9 @@ public class Test {
 	}
 }
 ````
+
+# 工具类 com.xnx3.MailUtil 常用方法
+- setSmtpPort()	设定服务器发信的端口号
+- setDebug()	是否开启邮件发送的调试日志
+- sendMail()	发送Txt纯文字邮件
+- sendHtmlMail()	发送HTML格式邮件
