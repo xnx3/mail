@@ -115,6 +115,14 @@ public class MailUtil {
 	}
 	
 	/**
+	 * 获取当前邮件配置相关的Properties
+	 * @return 邮件配置相关的Properties
+	 */
+	public Properties getProperties(){
+		return properties;
+	}
+	
+	/**
 	 * 是否开启邮件发送的日志打印
 	 * @param debug true：开启
 	 */
